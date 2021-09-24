@@ -49,6 +49,15 @@ Sun rises in the east.
 ```
 8. Customizations can be made to the input body of data by changing the variable `input_data_body` on line 21 of `scripts/driver.py` file.
 
+## Screenshots
+
+GET request's response on Postman:
+![postman-GET](https://user-images.githubusercontent.com/4570479/134700555-fd3ce3be-790f-4e77-8e7f-f734717c2d16.png)
+
+POST request's response on Postman:
+![postman-POST](https://user-images.githubusercontent.com/4570479/134700663-36ff2d28-b04a-4da9-802e-4353bd6e358c.png)
+
+
 ## References
 1. [Flask documentation](https://flask.palletsprojects.com/en/2.0.x/quickstart/)
-2. [3 Lines of Python Code to Write A Web Server](https://towardsdatascience.com/3-lines-of-python-code-to-write-a-web-server-46a109666dbf)
+2. [Requests documentation](https://docs.python-requests.org/en/latest/)
