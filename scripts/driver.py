@@ -13,19 +13,16 @@ def main():
     print("Fetching response from helloworld end-point...")    
     r = requests.get(url = API_END_POINT_HELLO)
     data = r.text
-    print("Data retrived from HelloWorld end-point:", data)
-    print("================================================")
+    print("Data retrived from helloworld end-point:", data)
+    print("=============================================================")
 
     #2.Call echo endpoint POST request
-    # data = "Hello, how do you do?"
-    # r = requests.post(url = API_ENDPOINT_ECHO, data = data)
-
-    # r = requests.post("http://127.0.0.1:5000/echo/?data='Howdy'")
-
-    # # extracting response text 
-    # print(r)
-
-
-
+    print("Fetching response from echo end-point...")  
+    input_data_body = "Sun rises in the east."
+    URL = "http://127.0.0.1:5000/echo?data=" + input_data_body
+    r = requests.post(URL)
+    print("Data retrived from echo end-point:")
+    print(r.text)
+    print("=============================================================")
 if __name__=='__main__':
    main()
